@@ -2,11 +2,11 @@
 #define MAX_ROWS 25
 #define MAX_COLS 80
 #define WHITE_ON_BLACK 0x0f
-#define RED_ON_WHITE 0xf4
 
 // vga i/o
-#define REG_SCREEN_CTRL 0x3d4
-#define REG_SCREEN_DATA 0x3d5
+#define SCREEN_BASE_CTRL 0x3d4 // 
+#define SCREEN_BASE_DATA 0x3d5 // cursor = (+0x0e = high register - +0x0f = low register)
 
-void print_char(char c, int col);
+void lprint_at(char* base, int row, int col);
+void lprint(char* base);
 void clear_screen();

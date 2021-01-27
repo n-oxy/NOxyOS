@@ -1,10 +1,9 @@
 #include "../drivers/screen.h"
+#include "../lib/util.h"
 void start()
 {
     clear_screen();
-    char str[] = "cum!";
-    for (int i = 0; i < sizeof(str) - 1; i++)
-    {
-        print_char(str[i], i);
-    }
+    char str[16];
+    int_to_ascii(123456789, str);
+    lprint(str);
 }
