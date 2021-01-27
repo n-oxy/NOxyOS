@@ -3,7 +3,6 @@
 void start()
 {
     clear_screen();
-    char str[16];
-    int_to_ascii(123456789, str);
+    char str[] = "ur mum\ncum\nabc\nafdsafasfsa";
     lprint(str);
 }
