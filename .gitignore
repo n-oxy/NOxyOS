@@ -60,3 +60,4 @@ dkms.conf
 /qemu
 /nasm
 /.vs
+/.vscode
