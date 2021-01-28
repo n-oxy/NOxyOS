@@ -3,6 +3,6 @@
 void start()
 {
     clear_screen();
-    char str[] = "ur mum\ncum\nabc\nafdsafasfsa";
+    char str[] = "ur mum\nabc\nafdsafasfsa";
     lprint(str);
 }
